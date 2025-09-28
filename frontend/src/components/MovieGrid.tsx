@@ -3,9 +3,9 @@ import { SimpleGrid, Text } from "@chakra-ui/react";
 import useMovies from "../hooks/useMovies";
 import MovieCard from "./MovieCard";
 import MovieCardSkeleton from "./MovieCardSkeleton";
-import type { Movie } from "../services/api";
+import type { Movie } from "../hooks/useMovies";
 
-const MovieGrid = () => {
+const MovieGrid = () => { 
   const { data, error, isLoading } = useMovies();
 
   if (error) return <Text>{error}</Text>;

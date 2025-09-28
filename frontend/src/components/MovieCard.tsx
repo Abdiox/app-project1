@@ -1,12 +1,8 @@
 import { Card, CardBody, Heading, HStack, Image } from "@chakra-ui/react";
-
-import type { Movie } from "../services/api"
-
-
+import type { Movie } from "../hooks/useMovies";
 interface Props {
   movie: Movie;
 }
-
 
 export const MovieCard = ({ movie }: Props) => {
     return (
